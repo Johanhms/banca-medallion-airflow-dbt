@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: capa_bronze
+    database: test_db
+    schema: capa_bronze
+    tables:
+      - name: dim_clientes
+      - name: dim_productos
+      - name: dim_ejecutivos
+      - name: fact_ventas_bancarias

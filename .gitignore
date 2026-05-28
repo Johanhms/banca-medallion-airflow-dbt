@@ -1,0 +1,18 @@
+# Descartar entorno local y variables secretas
+.env
+.dbt/
+
+# Descartar archivos temporales, logs y plugins de Airflow
+logs/
+plugins/
+
+# Descartar el volumen de datos de tu Postgres de Docker
+postgres-db-volume/
+
+# Descartar carpetas de compilación e historial de dbt
+dbt_proyecto/mi_banca_analitica/target/
+dbt_proyecto/mi_banca_analitica/dbt_packages/
+dbt_proyecto/mi_banca_analitica/logs/
+
+# Bloquear credenciales de dbt de forma definitiva
+**/profiles.yml
