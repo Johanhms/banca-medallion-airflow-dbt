@@ -33,3 +33,9 @@ models:
   mi_banca_analitica:
     # Config indicated by + and applies to all files under models/example/
     +materialized: table
+
+# Configuramos los destinos físicos reales de dbt:
+    Silver:
+      +schema: capa_silver  # Las tablas stg_ se van directo a capa_silver
+    Mart:
+      +schema: capa_gold    # La tabla mart_ se va directo a capa_gold

@@ -6,7 +6,7 @@ WITH productos_raw AS (
         codigo_producto,
         nombre_producto,
         familia_producto
-    FROM {{ source('capa_bronze', 'dim_productos') }}
+    FROM {{ source ('capa_bronze', 'dim_productos') }}
 )
 
 SELECT

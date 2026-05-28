@@ -1,6 +1,5 @@
 {{ config(
-    materialized='table',
-    schema = 'capa_gold'
+    materialized='table'
 ) }}
 
 WITH ventas AS (

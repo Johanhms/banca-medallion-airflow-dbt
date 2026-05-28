@@ -7,7 +7,7 @@ WITH clientes_raw AS (
         nombre,
         segmento,
         comuna
-    FROM {{ source('capa_bronze', 'dim_clientes') }} -- Esto lo definiremos luego, o puedes usar directametne: test_db.capa_bronze.dim_clientes
+    FROM {{ source('capa_bronze', 'dim_clientes') }} 
 )
 
 SELECT
